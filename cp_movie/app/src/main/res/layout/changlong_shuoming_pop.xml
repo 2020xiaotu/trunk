@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    >
+    <include layout="@layout/action_bar_two"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/long_dragon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="TODO"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="长龙助手是对“快3”，“时时彩”以及“PK10”的“大小单双”开奖结果进行统计监测，每期出现“大”、“小”、“单”、“双”的概率为1/2，如果连续3期及以上的开奖结果相同，将称之为“长龙”，通常会采用倍投的方式进行“斩龙”或“顺龙”。"
+            android:lineSpacingExtra="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="什么叫斩龙？"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:text="如连续开6期“单”，可以选择“双”进行投注，这样的投注方案称之为“斩龙”；" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="什么叫顺龙？"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:text="如连续开6期“单”，继续选择“单”进行投注，这样的投注方案称之为“顺龙”；" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="什么是倍投？"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:text="倍投是指一种成倍的投注方式，是为保障能够在“斩龙”或“顺龙”的过程中持续盈利的一种押注方式。" />
+    </LinearLayout>
+
+</LinearLayout>

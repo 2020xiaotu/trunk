@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.red_pakege.widget.FScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical"
+            android:background="@drawable/bkg_mine_corner_shape">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_othercharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:layout_gravity="center"/>
+
+            <View style="@style/line" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/defaultColor"/>
+
+
+
+                <EditText
+                    android:id="@+id/et_othercharge_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="@dimen/sp_14"
+                    android:hint="请输入账户昵称"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存款金额"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/defaultColor"/>
+
+
+                <TextView
+                    android:id="@+id/tv_moneyunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"/>
+                <EditText
+                    android:id="@+id/et_othercharge_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:layout_toLeftOf="@+id/tv_moneyunit"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/sp_14"
+                    android:background="@null"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单笔存款限额:"
+                    android:textColor="@color/defaultColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-500"
+                    android:textColor="@color/red"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 元"
+                    android:textColor="@color/defaultColor"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_othercharge_next"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_red_shape"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:text="下一步"/>
+        </LinearLayout>
+        <include layout="@layout/merge_reminder"/>
+    </LinearLayout>
+
+
+</com.example.red_pakege.widget.FScrollView>

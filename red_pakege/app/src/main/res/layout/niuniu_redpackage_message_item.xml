@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_msg"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/niuniu_send_user_name_tv"
+        android:textSize="14sp"
+        android:textColor="@color/default_two_color"
+        android:text="后来的我们"
+        android:visibility="gone"
+        />
+<!--    牛牛-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/red_pakege_bg_constraintLayout"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/niuniu_send_nor">
+
+        <TextView
+            android:id="@+id/niuniu_send_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="28dp"
+            android:text="25-3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/niuniu_red_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看红包"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/niuniu_send_amount_tv"
+            app:layout_constraintTop_toBottomOf="@+id/niuniu_send_amount_tv" />
+
+        <TextView
+            android:id="@+id/niuniu_send_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="牛牛红包"
+            android:textColor="@color/defaultColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        扫雷-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/saolei_red_pakege_bg_constraintLayout"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_receive_saolei_nor">
+
+        <TextView
+            android:id="@+id/saolei_send_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="28dp"
+            android:text="25-3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/saolei_red_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看红包"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/saolei_send_amount_tv"
+            app:layout_constraintTop_toBottomOf="@+id/saolei_send_amount_tv" />
+        <TextView
+            android:id="@+id/saolei_send_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="扫雷红包"
+            android:textColor="@color/defaultColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    福利-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fuli_red_pakege_bg_constraintLayout"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/fuli_receive_nor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/fuli_send_red_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看红包"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506" />
+
+        <TextView
+            android:id="@+id/fuli_receive_red_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看红包"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fuli_send_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="福利红包"
+            android:textColor="@color/defaultColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="54dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="59dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--        扫雷-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jinqiang_red_pakege_bg_constraintLayout"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_receive_saolei_nor">
+
+        <TextView
+            android:id="@+id/jinqiang_send_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="28dp"
+            android:text="25-3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/jinqiang_red_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看红包"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/jinqiang_send_amount_tv"
+            app:layout_constraintTop_toBottomOf="@+id/jinqiang_send_amount_tv" />
+        <TextView
+            android:id="@+id/jinqiang_send_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="禁枪红包"
+            android:textColor="@color/defaultColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/jinqiang_right_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_grab_right" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

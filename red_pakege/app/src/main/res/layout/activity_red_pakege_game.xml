@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.red_pakege.activity.red_game_activity.RedPakegeGameActivity">
+        <include layout="@layout/message_fragment_actionbar_layout"/>
+<!--        app:tabMode="scrollable"-->
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:tabIndicatorFullWidth="false"
+            android:id="@+id/red_pakege_list_tab"
+            ></com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/redpakege_game_list_viewpager"
+            />
+</LinearLayout>

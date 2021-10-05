@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">迅播红包</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--个人中心-->
+    <string name="text_personcenter_setting">设置</string>
+    <string name="text_personcenter_title">个人中心</string>
+    <string name="text_personcenter_todayrecharge">今日充值</string>
+    <string name="text_personcenter_todaycash">今日提现</string>
+    <string name="text_personcenter_todayprofit">今日盈利</string>
+    <string name="text_personcenter_drawingcenter">提款中心</string>
+    <string name="text_personcenter_activityaward">活动奖励</string>
+    <string name="text_personcenter_yubao">余额宝</string>
+    <string name="text_personcenter_capitaldetail">资金明细</string>
+    <string name="text_personcenter_sharemakemoney">分享赚钱</string>
+    <string name="text_personcenter_proxycenter">代理中心</string>
+    <string name="text_personcenter_safecenter">安全中心</string>
+    <string name="text_personcenter_beginnercourse">新手教程</string>
+    <!--登录注册-->
+    <string name="text_register_phone">手机号</string>
+    <string name="text_register_invitecode">邀请码</string>
+    <string name="text_register_msgcheckcode">短信验证码</string>
+    <string name="text_register_getcode">获取验证码</string>
+    <string name="text_register_passwd">密码</string>
+    <string name="text_register_confirmpwd">确认密码</string>
+    <string name="text_register">注册</string>
+    <string name="text_register_custom">没有邀请码请联系客服</string>
+    <string name="text_login">登录</string>
+    <string name="text_forgot_pwd">忘记密码?</string>
+    <string name="text_login_custom">登录失败？请联系客服</string>
+    <!--忘记密码-->
+    <string name="text_forgetpwd_commit">提交</string>
+    <string name="text_forgetpwd_phone">请输入手机号</string>
+    <string name="text_forgetpwd_checkcode">请输入验证码</string>
+    <string name="text_forgetpwd_pwd">请输入密码</string>
+    <string name="text_forgetpwd_confirm">请确认密码</string>
+    <!-- 充值-->
+    <string name="text_recharge_hint">请输入持卡人姓名</string>
+    <string name="text_recharge_custom">请选择常用的支付方式,为你匹配专职代理</string>
+    <string name="text_remind_tv1">温馨提示:</string>
+    <string name="text_remind_tv2">为确保你的款项及时到账，请您留意以下内容:</string>
+    <string name="text_remind_tv3">1.若在存款中提示二维码已过期或者存入金额已满，请返回重新发起支付。</string>
+    <string name="text_remind_tv4">2.站点每日都会产生大量存款订单，为确保每一位玩家的存款能够及时到账，请填写实际存款金额，以便于平台快速处理您的业务</string>
+    <string name="text_remind_tv5">3.支付时，请务必按照页面显示的金额进行支付，否则可能将导致订单延误或掉单</string>
+    <string name="text_gfcharge_td1">微信</string>
+    <string name="text_gfcharge_td2">银行卡</string>
+    <string name="text_othercharge_td1">通道一</string>
+    <string name="text_othercharge_td2">通道二</string>
+    <!-- MainActivity-->
+    <string name="exit_again">再点一次退出应用</string>
+
+    <!-- SettingActivity-->
+    <string name="text_setting_tv1">消息通知</string>
+    <string name="text_setting_tv2">声音提示</string>
+    <string name="text_setting_tv3">系统版本</string>
+    <string name="text_setting_tv4">清除缓存</string>
+    <string name="text_setting_tv5">安全退出</string>
+
+    <!--UserInfoActivity-->
+    <string name="text_userinfo_tv1">头像</string>
+    <string name="text_userinfo_tv2">昵称</string>
+    <string name="text_userinfo_tv3">个性签名</string>
+    <string name="text_userinfo_tv4">性别</string>
+    <string name="text_userinfo_tv5">账户ID</string>
+    <string name="text_userinfo_tv6">手机号</string>
+    <string name="text_userinfo_tv7">邀请码</string>
+    <string name="text_userinfo_tv8">个人名片</string>
+    <string name="text_userinfo_tv9">修改登录密码</string>
+    <string name="text_userinfo_tv10">修改支付密码</string>
+    <string name="text_userinfo_tv11">密码保护</string>
+    <string name="text_userinfo_tv12">绑定银行</string>
+
+<!--   修改登录密码 支付密码 activity -->
+    <string name="text_modifypwd_hint1">请输入验证码</string>
+    <string name="text_modifypwd_hint2">请输入原密码</string>
+    <string name="text_modifypwd_hint3">请输入密码</string>
+    <string name="text_modifypwd_hint4">请确认密码</string>
+    <string name="text_modifypwd_commit">提交</string>
+
+</resources>

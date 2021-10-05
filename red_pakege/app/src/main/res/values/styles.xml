@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/action_bar_color</item>
+        <!--<item name="colorPrimaryDark">#e6351a</item>-->
+        <item name="colorPrimaryDark">@color/action_bar_color</item>//状态栏颜色
+        <item name="colorAccent">@color/action_bar_color</item>
+    </style>
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+
+    <!--AppBar-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Toolbar的Theme的设置，都是针对popup的设置-->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/bkg_bar_gradient</item><!--设置背景颜色的-->
+        <item name="android:textColorPrimary">@android:color/white</item><!--设置文字颜色的-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuTheme</item><!--设置弹出位置的主题-->
+    </style>
+    <!--Toolbar弹出popup主题的设置-->
+    <style name="OverflowMenuTheme" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item><!--这个属性设置为false，就能使得popup在Toolbar的下面显示-->
+    </style>
+
+    <declare-styleable name="RoundRectImageView">
+        <attr name="corner" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
+    <item name="android:windowBackground">@drawable/splash_img</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <!-- 会话界面theme (主要设置透明状态栏,并解决点击输入框,聊天列表不会往上面移动的问题)-->
+    <style name="AppTheme.ConversationTheme" parent="AppTheme">
+<!--        设置层叠背景 上方使用渐变-->
+        <item name="android:windowBackground">@drawable/chat_theme_drawable</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+        <style name="noStatusColorTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        </style>
+
+    <style name="popupAnimationNormol" parent="android:Animation">//普通0秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+    <style name="pop_buttom_to_top_500" parent="android:Animation">//从下往上0.5秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画
+        <item name="android:windowExitAnimation">@anim/pop_out_500</item>
+
+    </style>
+    <style name="pop_buttom_to_top_150" parent="android:Animation">//从下往上0.15秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in_150</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_150</item>
+
+    </style>
+    <style name="popAlphaanim0.5" parent="android:Animation">//透明0.5秒动画
+        <!--<item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画-->
+        <item name="android:windowEnterAnimation">@anim/alphaanim_in_500</item>//透明度动画
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->//缩放动画
+        <!--<item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>-->
+        <item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>
+    </style>
+    <style name="popAlphaanim0.3" parent="android:Animation">//透明0.3秒动画
+        <!--<item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画-->
+        <item name="android:windowEnterAnimation">@anim/alphaanim_in_300</item>//透明度动画
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->//缩放动画
+        <!--<item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>-->
+        <item name="android:windowExitAnimation">@anim/alphaanim_out_300</item>
+    </style>
+
+    <!--pop中间弹出动画-->
+    <style name="pop_scale_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_pop_out</item>
+    </style>
+
+    <style name="line">
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/line</item>
+    </style>
+
+
+</resources>

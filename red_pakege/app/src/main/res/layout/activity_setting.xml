@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@drawable/selector_click_white2gray"
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_setting_tv1"
+            android:layout_centerVertical="true"
+            />
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_setting_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View style="@style/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_setting_vol"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@drawable/selector_click_white2gray"
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_setting_tv2"
+            android:layout_centerVertical="true"
+            />
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/checkbox_setting_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_setting_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@drawable/selector_click_white2gray"
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_setting_tv3"
+            android:layout_centerVertical="true"
+            />
+      <TextView
+          android:id="@+id/tv_setting_version"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@+id/iv_setting_go3"
+          android:layout_centerVertical="true"
+          android:text="v3.0.6"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_go3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_go"/>
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_setting_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@drawable/selector_click_white2gray"
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_setting_tv4"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_go"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_setting_safequit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn_red_shape"
+        android:text="@string/text_setting_tv5"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.AgentCenter.AgentShowActivity">
+<include layout="@layout/action_bar_two"/>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="155dp"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:contentDescription="TODO" android:src="@drawable/child_show" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="恭喜您的账号是代理账号，既可以自己投注，也可以发展下级赚取返点佣金。"-->
+                <!--android:textSize="13sp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:lineSpacingExtra="5dp"-->
+                    <!--android:text="如何赚取返点佣金？"-->
+                    <!--android:textColor="#dc3b40" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="彩票：可获得的返点佣金，取决于自身返点与下级返点的差值，如自身返点3，下级返点1，你将能获得下级投注金额2%的返佣，即下级投注100元，你将会获得2元；" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="如何为下级开户？"-->
+                    <!--android:textColor="#dc3b40" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="点击下级开户 >> 为下级设置返点 >> 生成邀请码>> 发送邀请码给下级 >> 下级即可注册；" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="如何查看下级发展？"-->
+                    <!--android:textColor="#dc3b40" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="点击下级管理，就能查看您所有下级账号；" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="点击团队报表、下级投注记录、下级交易记录查看代理的发展情况；" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="如何查看自身返点和彩票赔率比例？"-->
+                    <!--android:textColor="#dc3b40" />-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="点击下级开户，可查看自身返点；" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="点击下级开户 >>返点赔率表，可查看返点对应彩票赔率；" />-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="12dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="温馨提示"-->
+                    <!--android:textColor="#dc3b40" />-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="为下级设置的返点不同，返点越低，赔率就越低，抽佣比例越高，建议为下级设置的返点不要过低；" />-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="如果您为下级开设的是代理类型的账号，那么您的下级就能继续发展下级；" />-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="如果您为下级开设的是玩家类型的账号，那么您的下级只能投注，不能再发展下级，也看不到代理中心；" />-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:lineSpacingExtra="5dp"-->
+                <!--android:text="建议开设的下级是代理类型，无论发展了几级，您都能获得返佣。" />-->
+        <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_view"
+        ></WebView>
+
+</LinearLayout>

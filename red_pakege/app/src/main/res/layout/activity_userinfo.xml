@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/userinfo_parent"
+    >
+
+    <include layout="@layout/common_bar" />
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv1"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go1"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <ImageView
+                android:id="@+id/iv_userinfo_avatar"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go1"
+                android:src="@drawable/icon_tan_go" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv2"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go2"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go2" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_usersign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv3"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go3"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_usersign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go3" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv4"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go4"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go4" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_accountId"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv5"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go5"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_accountId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go5" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv6" />
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go6"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go6" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_invitecode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/text_userinfo_tv7"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go7"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_invitecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="01239"
+                android:layout_toLeftOf="@+id/iv_userinfo_go7" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_visitcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="个人名片"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go8"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <ImageView
+                android:id="@+id/tv_userinfo_visitcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/qr_code"
+                android:layout_toLeftOf="@+id/iv_userinfo_go8" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_modifyloginpwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="修改登录密码"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go9"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_modifyloginpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="已设置"
+                android:layout_toLeftOf="@+id/iv_userinfo_go9"/>
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_modifypaypwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="修改支付密码"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go10"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_modifypaypwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="已设置"
+                android:layout_toLeftOf="@+id/iv_userinfo_go10" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_protectpwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密码保护"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go11"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_protectedpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="未设置"
+                android:layout_toLeftOf="@+id/iv_userinfo_go11" />
+        </RelativeLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_bindbankcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@drawable/selector_click_white2gray"
+            android:clickable="true"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="绑定银行卡"/>
+
+            <ImageView
+                android:id="@+id/iv_userinfo_go12"
+                android:layout_width="@dimen/dp10"
+                android:layout_height="@dimen/dp10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_go" />
+
+            <TextView
+                android:id="@+id/tv_userinfo_bindbankcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_userinfo_go12" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

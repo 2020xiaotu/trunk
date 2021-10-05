@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bar_grey"
+        android:gravity="center"
+        android:text="选择银行"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_query"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/ic_gray_sousuo"
+        android:drawablePadding="6dp"
+        android:hint="输入筛选"
+        android:inputType="text"
+        android:maxLength="12"
+        android:paddingLeft="8dp"
+        android:textColor="@color/color66"
+        android:textSize="14sp" />
+
+    <View style="@style/line" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_bank"
+        android:layout_width="match_parent"
+        android:layout_height="270.0dp"
+        />
+</LinearLayout>

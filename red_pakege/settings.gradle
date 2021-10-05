@@ -1,0 +1,3 @@
+include ':app',':rxhttp'
+
+rootProject.name='red_pakege_demo'

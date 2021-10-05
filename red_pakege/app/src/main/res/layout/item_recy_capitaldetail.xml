@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_item_recy_capitaldetail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_yj_record"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_recy_capitaldetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/defaultColor"
+        android:text="充值记录"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0.1",
+
+    ]
+
+    version = [
+            butterknifeVersion   : "10.2.0",
+            eventbusVersion      : "3.1.1",
+            greendaoVersion      : "3.2.2",
+            rxandroidVersion     : "2.1.0",
+            rxjavaVersion        : "2.2.4",
+            autodisposeVersion   : "1.0.0-RC2",
+            okhttpVersion        : "3.12.0",
+            retrofitVersion      : "2.5.0",
+            daggerVersion        : "2.21",
+            kprogresshudVersion  : "1.2.0",
+            brvahVersion         : "2.9.45",
+            smartRefreshVersion  : "1.1.0",
+            fragmentationxVersion: "1.0.2",
+            gsonVersion          : "2.8.5",
+            rxpermissionsVersion : "0.10.2",
+    ]
+
+    dependencies = [
+
+            //注解框架
+            "butterknife"             : "com.jakewharton:butterknife:${version["butterknifeVersion"]}",
+            "butterknife-compiler"    : "com.jakewharton:butterknife-compiler:${version["butterknifeVersion"]}",
+            "eventbus"                : "org.greenrobot:eventbus:${version["eventbusVersion"]}",
+            "greendao"                : "org.greenrobot:greendao:${version["greendaoVersion"]}",
+
+            //rx系列+ 网络
+            "rxandroid"               : "io.reactivex.rxjava2:rxandroid:${version["rxandroidVersion"]}",
+            "rxjava"                  : "io.reactivex.rxjava2:rxjava:${version["rxjavaVersion"]}",
+            "autodispose"             : "com.uber.autodispose:autodispose-android-archcomponents:${version["autodisposeVersion"]}",
+            "okhttp"                  : "com.squareup.okhttp3:okhttp:${version["okhttpVersion"]}",
+            "logging-interceptor"     : "com.squareup.okhttp3:logging-interceptor:${version["okhttpVersion"]}",
+            "retrofit"                : "com.squareup.retrofit2:retrofit:${version["retrofitVersion"]}",
+            "converter-gson"          : "com.squareup.retrofit2:converter-gson:${version["retrofitVersion"]}",
+            "adapter-rxjava2"         : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitVersion"]}",
+            "dagger-compiler"         : "com.google.dagger:dagger-compiler:${version["daggerVersion"]}",
+            "dagger"                  : "com.google.dagger:dagger:${version["daggerVersion"]}",
+            "dagger-android"          : "com.google.dagger:dagger-android:${version["daggerVersion"]}",
+            "dagger-android-support"  : "com.google.dagger:dagger-android-support:${version["daggerVersion"]}",
+            "dagger-android-processor": "com.google.dagger:dagger-android-processor:${version["daggerVersion"]}",
+
+            //UI框架
+            "kprogresshud"            : "com.kaopiz:kprogresshud:${version["kprogresshudVersion"]}",
+            "BRVAH"                    : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version["brvahVersion"]}",
+            "SmartRefreshLayout"      : "com.scwang.smartrefresh:SmartRefreshLayout:${version["smartRefreshVersion"]}",
+            "SmartRefreshHeader"      : "com.scwang.smartrefresh:SmartRefreshHeader:${version["smartRefreshVersion"]}",
+            "fragmentationx"          : "me.yokeyword:fragmentationx:${version["fragmentationxVersion"]}",
+            "fragmentationx-core"     : "me.yokeyword:fragmentationx-core:${version[ "fragmentationxVersion"]}",
+            "fragmentationx-swipeback": "me.yokeyword:fragmentationx-swipeback:${version["fragmentationxVersion"]}",
+            "gson":                    "com.google.code.gson:gson:${version["gsonVersion"]}",
+            "rxpermissions":          "com.github.tbruyelle:rxpermissions:${version["rxpermissionsVersion"]}",
+
+    ]
+}

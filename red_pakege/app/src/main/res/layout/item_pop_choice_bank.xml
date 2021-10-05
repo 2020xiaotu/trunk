@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:id="@+id/iv_item_choicebank"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/ic_xingye"/>
+        <TextView
+            android:id="@+id/tv_item_choicebank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_item_choicebank"
+            android:textColor="@color/defaultColor"
+            android:text="兴业银行"/>
+
+        <ImageView
+            android:id="@+id/iv_item_choicebank_choice"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@drawable/icon_tan_go"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View style="@style/line" />
+
+
+</LinearLayout>

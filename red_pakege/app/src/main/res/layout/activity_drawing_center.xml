@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.mine.DrawingCenterActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_drawing_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/bkg_white_up_shape">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_drawcenter_sigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:layout_marginLeft="5dp"
+                android:drawableStart="@drawable/wenxintishi"
+                android:text="温馨提示"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(每天最多提现10次)"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        <View style="@style/line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="当前可提余额:"
+                    android:textColor="@color/defaultColor"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/tv_drawcenter_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_yellow"
+                    android:layout_marginLeft="3dp"
+                    android:text="999,747.74"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="元"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_drawcenter_allin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="全部提现"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+               />
+
+
+        </RelativeLayout>
+        <View style="@style/line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="提款到银行卡"
+                android:textColor="@color/defaultColor"/>
+
+            <LinearLayout
+                android:id="@+id/ll_drawcenter_gobank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                >
+                <com.example.red_pakege.widget.TextViewDrawable
+                    android:id="@+id/tv_drawcenter_chbankcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:drawableLeftWidth="20dp"
+                    app:drawableLeftHeight="20dp"
+                    android:drawablePadding="5dp"
+                    android:text="请选择银行卡"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/icon_go"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="提款金额"
+                android:textColor="@color/defaultColor"/>
+            <EditText
+                android:id="@+id/et_drawcenter_drawmoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textSize="14sp"
+                android:hint="请输入提现金额"
+                android:drawableLeft="@drawable/icon_rmb_black"
+                android:textColor="@color/defaultColor" />
+        </LinearLayout>
+        <View style="@style/line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="提款密码"
+                android:textColor="@color/defaultColor"/>
+
+            <EditText
+                android:id="@+id/et_drawcenter_drawpwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请输入提款密码"
+                android:inputType="textPassword"
+                android:textColor="@color/defaultColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View style="@style/line" />
+        <TextView
+            android:id="@+id/tv_drawcenter_range"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="提现范围:100.00 - 49999.00元"
+            android:textColor="@color/defaultColor"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_drawcenter_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="申请提款"
+        android:background="@drawable/bkg_red_down_shape"/>
+
+
+</LinearLayout>
